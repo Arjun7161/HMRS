@@ -8,14 +8,14 @@
 
 </head>
 <body>
-    <form action="">
-        <h2>login</h2>
+    <form action="home.php" method="post">
+        <h2>Login</h2>
         <Label>Name</Label>
-        <input type="text" name="loginname">
+        <input type="text" name="loginname"><br>
         <label >Email</label>
-        <input type="text" name="loginemail">
+        <input type="text" name="loginemail"><br>
         <label >Password</label>
-        <input type="password" name="loginpassword">
+        <input type="password" name="loginpassword"><br>
 
         <Button type="button">Login</Button>
     </form>
