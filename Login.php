@@ -10,14 +10,16 @@
 <body>
     <form action="home.php" method="post">
         <h2>Login</h2>
-        <Label>Name</Label>
-        <input type="text" name="loginname"><br>
+        <?php if (isset($_GET['error'])) { ?>
+           <p class="error"><?php echo $_GET['error']; ?></p>
+           <?php } ?> 
+        
         <label >Email</label>
         <input type="text" name="loginemail"><br>
         <label >Password</label>
         <input type="password" name="loginpassword"><br>
 
-        <Button type="button">Login</Button>
+        <Button type="submit">Login</Button>
     </form>
 </body>
 </html>
